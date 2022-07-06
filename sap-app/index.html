@@ -16,12 +16,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
 
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <title>Super Auto Pets</title>
 </head>
 <body>
-    <h1>Choose a pet</h1>
-    <input type="text">
-    <button type="button">Submit</button>
+    <div id="search-card">
+        <h2>Choose a pet</h2>
+        <input type="text">
+        <button id="submit-btn" type="button">Submit</button>
+    </div>
+
+    <div id="pet-card" class="hidden">
+        <p id="pet-name"></p>
+        <p id="pet-atk"></p>
+        <p id="pet-health"></p>
+    </div>
 </body>
 </html>

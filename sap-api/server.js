@@ -5,14 +5,17 @@ const PORT = 8000
 // array of pets
 const pets = {
     fish: {
+        name: 'fish',
         attack: 2,
         health: 2
     },
     beaver: {
+        name: 'beaver',
         attack: 3,
         health: 2
     },
     ant: {
+        name: 'ant',
         attack: 2,
         health: 1
     }
@@ -39,6 +42,6 @@ app.get('/pets/:petName', (req,res) => {
 })
 
 // set up server to be listening on port 8000, i.e. 'localhost:8000/'
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is running on port: ${PORT}.`)
 })
