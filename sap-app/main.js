@@ -1,1 +1,5 @@
-document.querySelector('button').addEventListener('click', )
+document.querySelector('button').addEventListener('click', showPet)
+
+function showPet() {
+    
+}
